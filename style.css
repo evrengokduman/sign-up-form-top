@@ -22,6 +22,7 @@ main {
   background-image: url(/alvan-nee-8g0D8ZfFXyA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   width: 40vw;
 }
 .right {
@@ -32,24 +33,64 @@ main {
 }
 
 .first {
-  height: 40vh;
+  line-height: 1.4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
-  margin-left: 2rem;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+.first h3 {
+  text-align: center;
 }
 
 .second {
   background-color: #ffff;
-  height: 30vh;
+  height: 45vh;
+}
+
+.second h3 {
+  margin: 2rem;
 }
 
 .form-main-div {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 200px;
+  border: 1px solid #e5e7eb;
+  height: 25px;
+  border-radius: 5px;
 }
 
 .third {
-  height: 30vh;
+  height: 25vh;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    background-size: contain;
+  }
+  .first {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .form-main-div {
+    flex-direction: column;
+  }
 }
